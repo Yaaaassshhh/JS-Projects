@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500&family=Pacifico&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --heading:rgba(0,10,48);
+    --para:#777;
+    --white:#fff;
+    --black:#000;
+    --primary:#CF5C36;
+    --borderR:#77777754;
+    --secondary:#EFC88B;
+    --space:10px;
+    --blur:0px;
+    --color:#CF5C36;
+
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+}
+
+ body{
+    /* overflow-x: hidden; */
+    /* height: 100vh; */
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.section{
+    padding: 9rem 0;
+}
+
+.container{
+    max-width: 150rem;
+    margin: 0 auto;
+} 
+
+
+
+.panels{
+    display: flex;
+    height: 100vh;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    /* gap: 4rem; */
+    align-items: center;
+    transition: all 800ms ease-in-out;
+}
+
+.panel >*{
+    flex: 1 0 auto;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.panel p{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+
+}
+
+
+
+
+.panel1{
+    background: url('file:///C:/Users/gautam/Desktop/WT%20LAB/Website%20Clones/Javascript%20Projects/Image%20Gallery/img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.panel2{
+    background: url('file:///C:/Users/gautam/Desktop/WT%20LAB/Website%20Clones/Javascript%20Projects/Image%20Gallery/img/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.panel3{
+    background: url('file:///C:/Users/gautam/Desktop/WT%20LAB/Website%20Clones/Javascript%20Projects/Image%20Gallery/img/4.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.panel4{
+    background: url('file:///C:/Users/gautam/Desktop/WT%20LAB/Website%20Clones/Javascript%20Projects/Image%20Gallery/img/6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.panel5{
+    background: url('file:///C:/Users/gautam/Desktop/WT%20LAB/Website%20Clones/Javascript%20Projects/Image%20Gallery/img/5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.addFlex{
+    flex: 3;
+    transition: all 800ms ease-in-out;    
+}
+
+.panel> *:first-child{
+    transform: translateY(-100%);
+    transition: all 800ms ease-in-out;    
+}
+
+.panel> *:last-child{
+    transform: translateY(100%);
+    transition: all 800ms ease-in-out;    
+}
+
+.panel.active>*:first-child{
+    transform: translateY(0);
+    transition: all 800ms ease-in-out;    
+}
+
+.panel.active>*:last-child{
+    transform: translateY(0);
+    transition: all 800ms ease-in-out;    
+}
+
+
