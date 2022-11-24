@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500&family=Pacifico&family=Ubuntu:wght@400;500;700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+                
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --heading:rgba(0,10,48);
+    --para:#777;
+    --white:#fff;
+    --black:#000;
+    --primary:#CF5C36;
+    --borderR:#77777754;
+    --secondary:#EFC88B;
+    --space:10px;
+    --blur:0px;
+    --color:#CF5C36;
+
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+}
+
+ body{
+    /* overflow-x: hidden; */
+    /* height: 100vh; */
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.section{
+    padding: 9rem 0;
+}
+
+.container{
+    max-width: 150rem;
+    margin: 0 auto;
+} 
+
+
+body{
+    background-color: #d1cbcb7d;
+}
+
+
+.card{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.inner-card{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+
+.card-row{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #19244d;
+    padding: 5rem 7rem;
+    /* width: 45rem; */
+    gap: 3rem;
+}
+
+.card-col h1{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.screen{
+    background-color: black;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    width: 17rem;
+    padding: 0 2rem;
+}
+
+.screen p{
+    color: white;
+    font-size: 7rem;
+    text-align: right;
+    color: #F94F6D;
+    font-weight: bolder;
+    font-family: 'Cursed Timer ULiL';
+    letter-spacing: 0.5rem;
+}
+
+
+.plus{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: center;
+}
+
+
+.plus-num{
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plus-num p{
+    font-family: 'Cursed Timer ULiL';
+    color: #9AABD8;
+    padding: 0.5rem 1rem;
+}
+
