@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500&family=Pacifico&family=Ubuntu:wght@400;500;700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+                
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --white:#fff;
+    --black:#000;
+    --para:#777;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+}
+
+ body{
+    /* overflow-x: hidden; */
+    /* height: 100vh; */
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.section{
+    padding: 9rem 0;
+}
+
+.container{
+    max-width: 150rem;
+    margin: 0 auto;
+} 
+
+
+body{
+    background-color: #d1cbcb7d;
+}
+
+.box-inner{
+    background-color: white;
+    padding: 0.5rem;
+    height: 45rem;
+    width: 65rem;
+    border-radius: 8px;
+
+}
+
+.inner-row{
+    background-color: #273549;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.head h1{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.head h1 span{
+    display: block;
+    color:#10B981;
+}
+
+.head h3{
+    color: #c7bebeb5;
+}
+
+.password-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.passwords{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 5rem;
+    gap: 3rem;
+}
+
+.password-col{
+    background-color: #354761fc;
+    border-radius: 4px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.password-col p{
+    color: #10B981;
+    padding: 1rem 1.7rem;
+    transition: all 500ms ease-in-out;
+}
+
+.inner-col{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem 6rem;
+}
+
+.mid{
+    padding-bottom: 1rem;
+}
+
+.mid .btn{
+    background-color: #10B981;
+    display: inline-block;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+
+
+.passwords::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c7bebeb5;
+    width: 100%;
+    height: 0.1rem;
+
+}
+
+
+.mid .btn:hover{
+    filter: opacity(0.9);
+}
