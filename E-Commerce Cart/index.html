@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+</head>
+<body>
+
+  <div class="cart-box">
+
+    <div class="inner-cart container">
+
+      <div class="cart-row">
+
+
+        <div class="cart-col cart-left">
+
+          
+          <h2 class="head">Cart(2 Items)</h2>
+
+          <div class="left-row">
+
+            <div class="left-col">
+              
+              <div class="img-box">
+                <img src="img/shirt1-compressed.jpg" alt="">
+              </div>
+
+              <div class="txt-box">
+
+                <h3 class="sub-head">Grey Zara Shirt</h3>
+                
+                <div class="desc">
+                  <p>Shirt: Zara</p>
+                  <p>Color: Grey</p>
+                  <p>Size: M</p>
+                </div>
+
+                <div class="options">
+
+
+                  <div class="remove option">
+                    <ion-icon name="trash-outline"></ion-icon>
+                    <a href="" class="remove-btn option-btn">Remove Item</a>
+                  </div>
+
+                  <div class="wishlist option">
+                
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <a href="" class="wishlist-btn option-btn">Move to Wishlist</a>
+                  </div>
+
+                  <h4 class="option-price">$<span id="price1">40</span></h4>
+                </div>
+
+                <div class="menu">
+
+                  <div class="menu-item minus menu-icon1" onclick="decrease('item1','price1')">
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                  
+                  <div class="menu-item">
+                    <p class="item" id="item1">1</p>
+                  </div>
+
+
+                  <div class="menu-item plus menu-icon1" onclick="increase('item1','price1')">
+                    <ion-icon name="add-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="left-col">
+              
+              <div class="img-box">
+
+                <img src="img/shirt2-compressed.jpg" alt="">
+              </div>
+
+              <div class="txt-box">
+
+                <h3 class="sub-head">Blue Zara Shirt</h3>
+                
+                <div class="desc">
+                  <p>Shirt: Zara</p>
+                  <p>Color: Blue</p>
+                  <p>Size: M</p>
+                </div>
+
+                <div class="options">
+
+
+                  <div class="remove option">
+                    <ion-icon name="trash-outline"></ion-icon>
+                    <a href="" class="remove-btn option-btn">Remove Item</a>
+                  </div>
+
+                  <div class="wishlist option">
+                
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <a href="" class="wishlist-btn option-btn">Move to Wishlist</a>
+                  </div>
+
+                  <h4 class="option-price">$<span id="price2">40</span></h4>
+                </div>
+
+                <div class="menu">
+                  <div class="menu-item minus menu-icon2" onclick="decrease('item2','price2')">
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                  
+                  <div class="menu-item">
+                    <p class="item" id="item2">1</p>
+                  </div>
+
+
+                  <div class="menu-item plus menu-icon2" onclick="increase('item2','price2')">
+                    <ion-icon name="add-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-col cart-right">
+          
+          <div class="amount-box">
+
+            <h3 class="sub-head">The Total Amount Of</h3>
+
+            <div class="charges">
+              
+              <div class="charge charges-product">
+                <p>Product Amount</p>
+                <p>$<span id="charges-price">80</span></p>
+              </div>
+
+              <div class="charge charges-shipping">
+                <p>Shipping Charge</p>
+                <p>$50</p>
+              </div>
+
+            </div>
+
+            <div class="checkout">
+
+              <div class="checkout-row">
+                <p>The Total Amount(including VAT)</p>
+                <p>$<span id="checkout-price">130</span></p>
+              </div>
+
+              <a href="" class="btn btn-checkout">checkout</a>
+            </div>
+
+          </div>
+
+          <div class="discount-box">
+            <div class="discount-header">
+              <h3 class="sub-head">Add a discount code(optional)</h3>
+              <div class="btn-arrow rotate">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="hide-code">
+
+              <div class="code">
+                <input type="text" name="" id="code-text" placeholder="Enter Coupon Code">
+              <p class="code-msg">Code is 215</p>
+            </div>
+            <a href="" class="btn btn-apply btn-checkout">Apply</a>
+          </div>
+            
+          </div>
+
+          <div class="delivery-date">
+            <h3 class="sub-head">Expected Delivery Date</h4>
+            <p>July 7th 2017 - July 14th 2017</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
+<script src="js/index.js"></script>    
+</body>
+</html>
